@@ -1,0 +1,36 @@
+# data
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# models
+models/*.pkl
+models/*.joblib
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# reports
+reports/figures/*
+!reports/figures/.gitkeep
+
+# os
+.DS_Store
+Thumbs.db
+
+# Required files for SmartHire application
+!models/resume_classifier.pkl
+!models/resume_vectorizer.pkl
+!data/processed/jobs_clean.csv
+
+# Keep cleaned job dataset out of GitHub
+data/processed/jobs_clean.csv
+
+# Include trained models
+!models/resume_classifier.pkl
+!models/resume_vectorizer.pkl
